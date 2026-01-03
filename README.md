@@ -57,16 +57,6 @@ I enjoy turning ideas into working products and solving real production issues.
 - WordPress
 - BigCommerce
 
-### Tools
-- Git & GitHub
-- VS Code
-- NotePad
-- Canva
-
-### AI
-- ChatGPT, DeepSeek, Grok and Gemini
-- Copilot, Cursor, Windsurf, Bolt, Lovable, FireBase, AntiGravity
-
 ---
 
 ## Experience & Selected Work
@@ -87,13 +77,6 @@ Built and maintained multiple websites with focus on:
 - Mobile responsiveness
 - Fast loading speed
 - Easy content management
-
-### Ecommerce Projects
-Experience with:
-- Product listings
-- Payment gateway integration
-- Performance optimization
-- User flow improvements
 
 ---
 
