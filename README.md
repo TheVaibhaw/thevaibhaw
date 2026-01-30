@@ -48,8 +48,7 @@ const vaibhaw = {
     "JavaScript",
     "Node.js"
   ],
-  challenge:
-    "Building scalable web applications and high-performance e-commerce solutions."
+  challenge: "Building scalable web applications and high-performance e-commerce solutions."
 };
 ```
 
