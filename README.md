@@ -33,6 +33,6 @@ const vaibhaw = {
 }
 ```
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTVndHhteDB3bmtvM2RyM2dzY2I2dzJsdXU3bGgxcWk4NXc5MDlpaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5k5vZwRFZR5aZeniqb/giphy.gif" width="60"> <em><b>Passionate about turning ideas into reality through code!</b> Whether you need an <b>e-commerce solution, custom WordPress development, or just want to collaborate</b> — let's connect and build something amazing together! 🚀</em>
+<em><b>Passionate about turning ideas into reality through code!</b> Whether you need an <b>e-commerce solution, custom WordPress development, or just want to collaborate</b> — let's connect and build something amazing together! 🚀</em>
 
 ---
