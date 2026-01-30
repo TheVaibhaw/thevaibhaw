@@ -12,25 +12,45 @@
 
 ```javascript
 const vaibhaw = {
-  pronouns: "he" | "him",
-  frontend: [HTML, CSS, Bootstrap, JavaScript, jQuery],
-  backend: [Node.js, PHP],
-  database: [Mongodb, MySQL],
-  cms: [Bigcommerce, WordPress, WooCommerce, RubberDuck],
-  devops: [Git, Github],
-  tools: [Postman, Docker],
-  payment-gateway-integration: [Binance Pay, Stripe],
-  operating systems: [Windows, Linux],
-  ai: ["Chat GPT", Gemini, DeepSeek, Claude, Qwen3-Max, Grok, Perplexity, Copilot],
-  architecture: ["e-commerce solutions", "custom themes", "plugin development"],
+  pronouns: ["he", "him"],
+  frontend: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+  backend: ["Node.js", "PHP"],
+  database: ["MongoDB", "MySQL"],
+  cms: ["BigCommerce", "WordPress", "WooCommerce", "RubberDuck"],
+  devops: ["Git", "GitHub"],
+  tools: ["Postman", "Docker"],
+  paymentGatewayIntegration: ["Binance Pay", "Stripe"],
+  operatingSystems: ["Windows", "Linux"],
+  ai: [
+    "ChatGPT",
+    "Gemini",
+    "DeepSeek",
+    "Claude",
+    "Qwen3-Max",
+    "Grok",
+    "Perplexity",
+    "Copilot"
+  ],
+  architecture: [
+    "e-commerce solutions",
+    "custom themes",
+    "plugin development"
+  ],
   currentFocus: {
-                    company: "Tech Prastish Software Solution Pvt. Ltd.",
-                    role: "Web Developer",
-                    since: "2022"
-                  },
-  expertise: [WordPress, WooCommerce, BigCommerce, JavaScript, "Node.js"],
-  Challenge: "Building scalable web applications and high-performance e-commerce solutions."
-}
+    company: "Tech Prastish Software Solution Pvt. Ltd.",
+    role: "Web Developer",
+    since: "2022"
+  },
+  expertise: [
+    "WordPress",
+    "WooCommerce",
+    "BigCommerce",
+    "JavaScript",
+    "Node.js"
+  ],
+  challenge:
+    "Building scalable web applications and high-performance e-commerce solutions."
+};
 ```
 
 <em><b>Passionate about turning ideas into reality through code!</b> Whether you need an <b>e-commerce solution, custom WordPress development, or just want to collaborate</b> — let's connect and build something amazing together! 🚀</em>
