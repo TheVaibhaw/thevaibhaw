@@ -3,7 +3,7 @@
 <p><em>Web Developer at <a href="https://www.tech-prastish.com/">Tech Prastish Software Solution Pvt. Ltd.</a></br>Website Developer from Saran, Bihar 🇮🇳<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 
-[![Website](https://img.shields.io/badge/-vaibhawkumarparashar.in-47CCCC?style=flat-square&logo=Google-Chrome&logoColor=white&link=https://vaibhawkumarparashar.in/)](https://vaibhawkumarparashar.in/)
+[![Website](https://img.shields.io/badge/-vaibhawkumar.in-47CCCC?style=flat-square&logo=Google-Chrome&logoColor=white&link=https://vaibhawkumar.in/)](https://vaibhawkumar.in/)
 [![Linkedin: TheVaibhaw](https://img.shields.io/badge/-TheVaibhaw-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thevaibhaw/)](https://www.linkedin.com/in/thevaibhaw/)
 [![GitHub TheVaibhaw](https://img.shields.io/github/followers/thevaibhaw?label=follow&style=social)](https://github.com/TheVaibhaw)
 
