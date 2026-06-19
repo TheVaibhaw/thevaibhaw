@@ -1,24 +1,15 @@
-<!-- ====================================================================== -->
-<!--                              HERO BANNER                               -->
-<!-- ====================================================================== -->
 <div align="center">
 
 <a href="https://vaibhawkumar.in/">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,40:2575fc,100:6a11cb&height=220&section=header&text=Vaibhaw%20Kumar&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%E2%80%A2%20E-Commerce%20Architect&descAlignY=58&descSize=20" alt="banner"/>
 </a>
 
-<!-- ====================================================================== -->
-<!--                            TYPING HEADLINE                             -->
-<!-- ====================================================================== -->
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2575FC&center=true&vCenter=true&width=600&height=50&lines=Hi+%F0%9F%91%8B+I'm+Vaibhaw+Kumar;Web+Developer+%40+Tech+Prastish;I+build+scalable+high-performance+web+apps;WordPress+%E2%80%A2+WooCommerce+%E2%80%A2+BigCommerce;Turning+ideas+into+reality+through+code" alt="typing" />
 </a>
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                          BADGES & SOCIALS                              -->
-<!-- ====================================================================== -->
 <img src="https://komarev.com/ghpvc/?username=TheVaibhaw&label=Profile%20Views&color=2575fc&style=for-the-badge" alt="views" />
 <a href="https://github.com/TheVaibhaw?tab=followers">
   <img src="https://img.shields.io/github/followers/TheVaibhaw?label=Followers&style=for-the-badge&color=6a11cb" alt="followers" />
@@ -46,9 +37,6 @@
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                                ABOUT ME                                -->
-<!-- ====================================================================== -->
 ## &nbsp; 👨‍💻 &nbsp; About Me
 
 ```typescript
@@ -72,9 +60,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                              TECH STACK                                -->
-<!-- ====================================================================== -->
 ## &nbsp; 🛠️ &nbsp; Tech Stack & Tools
 
 <div align="center">
@@ -104,9 +89,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                            GITHUB ANALYTICS                            -->
-<!-- ====================================================================== -->
 ## &nbsp; 📊 &nbsp; GitHub Analytics
 
 <div align="center">
@@ -120,9 +102,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                            ACTIVITY GRAPH                              -->
-<!-- ====================================================================== -->
 ## &nbsp; 📈 &nbsp; Contribution Graph
 
 <div align="center">
@@ -133,9 +112,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                                 QUOTE                                  -->
-<!-- ====================================================================== -->
 <div align="center">
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="quote" />
@@ -144,9 +120,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-<!-- ====================================================================== -->
-<!--                                 FOOTER                                 -->
-<!-- ====================================================================== -->
 <div align="center">
 
 ### 💡 Let's build something amazing together
