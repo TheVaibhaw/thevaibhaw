@@ -4,14 +4,14 @@
 <div align="center">
 
 <a href="https://vaibhawkumar.in/">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,40:2575fc,100:6a11cb&height=220&section=header&text=Vaibhaw%20Kumar%20Parashar&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%E2%80%A2%20E-Commerce%20Architect&descAlignY=58&descSize=20" alt="banner"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,40:2575fc,100:6a11cb&height=220&section=header&text=Vaibhaw%20Kumar&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%E2%80%A2%20E-Commerce%20Architect&descAlignY=58&descSize=20" alt="banner"/>
 </a>
 
 <!-- ====================================================================== -->
 <!--                            TYPING HEADLINE                             -->
 <!-- ====================================================================== -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2575FC&center=true&vCenter=true&width=600&height=50&lines=Hi+%F0%9F%91%8B+I'm+Vaibhaw+Kumar+Parashar;Web+Developer+%40+Tech+Prastish;I+build+scalable+high-performance+web+apps;WordPress+%E2%80%A2+WooCommerce+%E2%80%A2+BigCommerce;Turning+ideas+into+reality+through+code" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2575FC&center=true&vCenter=true&width=600&height=50&lines=Hi+%F0%9F%91%8B+I'm+Vaibhaw+Kumar;Web+Developer+%40+Tech+Prastish;I+build+scalable+high-performance+web+apps;WordPress+%E2%80%A2+WooCommerce+%E2%80%A2+BigCommerce;Turning+ideas+into+reality+through+code" alt="typing" />
 </a>
 
 <br/>
@@ -98,7 +98,7 @@ const vaibhaw: Developer = {
 
 **DevOps & Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,docker,postman,linux,windows&theme=dark" alt="tools" />
+<img src="https://skillicons.dev/icons?i=git,github,postman,linux,windows&theme=dark" alt="tools" />
 
 </div>
 
