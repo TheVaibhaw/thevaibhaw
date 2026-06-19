@@ -51,8 +51,6 @@
 <!-- ====================================================================== -->
 ## &nbsp; 👨‍💻 &nbsp; About Me
 
-<div align="center">
-
 ```typescript
 const vaibhaw: Developer = {
   role:       "Web Developer @ Tech Prastish",
@@ -64,8 +62,6 @@ const vaibhaw: Developer = {
   funFact:    "I turn caffeine into commits ☕ → 💻",
 };
 ```
-
-</div>
 
 - 🔭 &nbsp; Building **e-commerce solutions** that scale
 - 🛒 &nbsp; Crafting **custom WordPress themes & plugins**
