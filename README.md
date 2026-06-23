@@ -89,37 +89,6 @@ const vaibhaw: Developer = {
 
 <br/>
 
-## &nbsp; 📊 &nbsp; GitHub Analytics
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=TheVaibhaw&show_icons=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0f1117&title_color=2575fc&icon_color=6a11cb&text_color=c9d1d9" alt="stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=TheVaibhaw&theme=tokyonight&hide_border=true&background=0f1117&ring=2575fc&fire=6a11cb&currStreakLabel=2575fc" alt="streak" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheVaibhaw&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f1117&title_color=2575fc&text_color=c9d1d9&langs_count=8" alt="top langs" />
-
-</div>
-
-<br/>
-
-## &nbsp; 📈 &nbsp; Contribution Graph
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=TheVaibhaw&theme=tokyo-night&hide_border=true&bg_color=00000000&color=2575fc&line=6a11cb&point=ffffff&area=true&area_color=2575fc" alt="activity graph" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="quote" />
-
-</div>
-
-<br/>
-
 <div align="center">
 
 ### 💡 Let's build something amazing together
