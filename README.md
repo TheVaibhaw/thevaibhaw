@@ -1,102 +1,45 @@
 <div align="center">
 
-<a href="https://vaibhawkumar.in/">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,40:2575fc,100:6a11cb&height=220&section=header&text=Vaibhaw%20Kumar&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%E2%80%A2%20E-Commerce%20Architect&descAlignY=58&descSize=20" alt="banner"/>
-</a>
+  <!-- Fully Responsive Theme-Aware Terminal Banner -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/main/dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/main/light.svg" />
+    <img alt="Vaibhaw Kumar - Terminal Animated Banner" src="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/main/dark.svg" width="100%" />
+  </picture>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2575FC&center=true&vCenter=true&width=600&height=50&lines=Hi+%F0%9F%91%8B+I'm+Vaibhaw+Kumar;Web+Developer+%40+Tech+Prastish;I+build+scalable+high-performance+web+apps;WordPress+%E2%80%A2+WooCommerce+%E2%80%A2+BigCommerce;Turning+ideas+into+reality+through+code" alt="typing" />
-</a>
+  <br/><br/>
 
-<br/>
+  <!-- Self-Hosted Streak Stats Card (Responsive 100% Width) -->
+  <img width="100%" src="https://streak-stats.demolab.com/?user=thevaibhaw&amp;hide_border=true&amp;background=0A101F&amp;stroke=22D3EE&amp;ring=A78BFA&amp;fire=10B981&amp;currStreakLabel=22D3EE&amp;sideLabels=94A3B8&amp;currStreakNum=F8FAFC&amp;sideNums=F8FAFC&amp;dates=64748B&amp;titleColor=22D3EE&amp;card_width=1180" alt="GitHub Streak" />
 
-<img src="https://komarev.com/ghpvc/?username=TheVaibhaw&label=Profile%20Views&color=2575fc&style=for-the-badge" alt="views" />
-<a href="https://github.com/TheVaibhaw?tab=followers">
-  <img src="https://img.shields.io/github/followers/TheVaibhaw?label=Followers&style=for-the-badge&color=6a11cb" alt="followers" />
-</a>
+  <br/><br/>
 
-<br/><br/>
+  <!-- GitHub Stats & Top Languages Side-by-Side (Responsive 49% Widths) -->
+  <img width="49%" src="https://YOUR-INSTANCE.vercel.app/api?username=thevaibhaw&amp;show_icons=true&amp;count_private=true&amp;include_all_commits=true&amp;hide_rank=true&amp;hide_border=true&amp;title_color=22D3EE&amp;icon_color=A78BFA&amp;text_color=94A3B8&amp;bg_color=0A101F&amp;card_width=500" alt="GitHub Stats" />
+  <img width="49%" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=thevaibhaw&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;title_color=22D3EE&amp;text_color=94A3B8&amp;bg_color=0A101F&amp;card_width=500" alt="Top Languages" />
 
-<a href="https://vaibhawkumar.in/">
-  <img src="https://img.shields.io/badge/Portfolio-2575fc?style=for-the-badge&logo=Google-Chrome&logoColor=white" alt="portfolio" />
-</a>
-<a href="https://www.linkedin.com/in/thevaibhaw/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=Linkedin&logoColor=white" alt="linkedin" />
-</a>
-<a href="https://github.com/TheVaibhaw">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="github" />
-</a>
-<a href="https://www.tech-prastish.com/">
-  <img src="https://img.shields.io/badge/Tech%20Prastish-6a11cb?style=for-the-badge&logo=briefcase&logoColor=white" alt="company" />
-</a>
-<a href="mailto:vaibhawtpss@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" />
-</a>
+  <br/><br/>
 
-</div>
+  <!-- Animated Contribution Snake -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/output/github-snake.svg" />
+    <img alt="Snake Eating Contributions" src="https://raw.githubusercontent.com/thevaibhaw/thevaibhaw/output/github-snake.svg" width="100%" />
+  </picture>
 
-<br/>
+  <br/><br/>
 
-## &nbsp; 👨‍💻 &nbsp; About Me
-
-```typescript
-const vaibhaw: Developer = {
-  role:       "Web Developer @ Tech Prastish",
-  location:   "Saran, Bihar, India 🇮🇳",
-  since:      2022,
-  focus:      "Scalable web apps & high-performance e-commerce",
-  philosophy: "Clean code. Real impact. Ship it.",
-  learning:   "System design & cloud architecture",
-  funFact:    "I turn caffeine into commits ☕ → 💻",
-};
-```
-
-- 🔭 &nbsp; Building **e-commerce solutions** that scale
-- 🛒 &nbsp; Crafting **custom WordPress themes & plugins**
-- 💳 &nbsp; Integrating **payment gateways** end-to-end (Stripe, Binance Pay)
-- 🌱 &nbsp; Always **learning something new**
-- 🤝 &nbsp; Open to **collaboration & freelance** work
-- 📫 &nbsp; Reach me at **vaibhawtpss@gmail.com**
-
-<br/>
-
-## &nbsp; 🛠️ &nbsp; Tech Stack & Tools
-
-<div align="center">
-
-**Languages & Frontend**
-
-<img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,jquery&theme=dark" alt="frontend" />
-
-**Backend & Database**
-
-<img src="https://skillicons.dev/icons?i=nodejs,php,mongodb,mysql&theme=dark" alt="backend" />
-
-**CMS, E-Commerce & Payments**
-
-<img src="https://skillicons.dev/icons?i=wordpress&theme=dark" alt="wordpress" />
-&nbsp;
-<img src="https://img.shields.io/badge/WooCommerce-96588A?style=for-the-badge&logo=woocommerce&logoColor=white" alt="woocommerce" />
-<img src="https://img.shields.io/badge/BigCommerce-121118?style=for-the-badge&logo=bigcommerce&logoColor=white" alt="bigcommerce" />
-<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="stripe" />
-<img src="https://img.shields.io/badge/Binance%20Pay-F0B90B?style=for-the-badge&logo=binance&logoColor=black" alt="binance" />
-
-**DevOps & Tools**
-
-<img src="https://skillicons.dev/icons?i=git,github,postman,linux,windows&theme=dark" alt="tools" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### 💡 Let's build something amazing together
-
-Need an **e-commerce solution**, **custom WordPress development**, or a hand on your next project?
-<br/>
-Let's connect and turn your idea into reality. 🚀
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,50:2575fc,100:0f2027&height=130&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=ffffff&animation=twinkling&fontAlignY=68" alt="footer"/>
+  <!-- Clickable Social Badges -->
+  <a href="https://linkedin.com/in/itsvaibhaw" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://instagram.com/Itsvaibhaw" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&amp;logo=instagram&amp;logoColor=A78BFA&amp;labelColor=0A101F" alt="Instagram" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:imvaibhaw@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&amp;logo=gmail&amp;logoColor=10B981&amp;labelColor=0A101F" alt="Email" />
+  </a>
 
 </div>
