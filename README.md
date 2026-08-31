@@ -14,7 +14,7 @@
     🎓 <b>What I Do:</b> B.Tech in CSE with <b>3.6+ years of experience</b>, working as a Website Developer at <b>Tech Prastish Software Solutions</b>.<br/><br/>
     ⚡ <b>Skills & Tech:</b> Building fast websites, APIs, and online stores using <b>React, Next.js, TypeScript, Node.js, PHP, WordPress</b> & <b>BigCommerce</b>.<br/><br/>
     ☕ <b>Fun Fact:</b> Powered by <i>kadak chai</i> ☕ (tea is a must, coffee is optional!), fixing hard coding bugs, and writing blogs at <a href="https://blog.vaibhawkumar.in" target="_blank">blog.vaibhawkumar.in</a>.<br/><br/>
-    🚀 <b>My Goal:</b> Write clean code, make websites fast, and <i>keep everything simple—sab smooth chalega!</i>
+    🚀 <b>My Goal:</b> Write clean code, make websites fast, and <i>keep everything simple - sab smooth chalega!</i>
   </p>
 
   <br/><br/>
