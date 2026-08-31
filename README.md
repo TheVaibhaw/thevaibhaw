@@ -10,11 +10,11 @@
   <h3>Hey there! Welcome to my GitHub space 👋</h3>
 
   <p align="left">
-    📍 <b>Roots & Location:</b> Born and raised in <b>Bihar</b>, now crafting web applications out of <b>Mohali, Punjab</b>.<br/><br/>
-    🎓 <b>Background & Role:</b> B.Tech CSE (HPTU grad) with <b>3.6+ years of experience</b>, currently working as a Website Developer at <b>Tech Prastish Software Solutions</b>.<br/><br/>
-    ⚡ <b>Tech Arsenal:</b> Building fast web apps, APIs, and online stores with <b>React, Next.js, TypeScript, Node.js, PHP, WordPress</b> & <b>BigCommerce</b>.<br/><br/>
-    ☕ <b>Fuel & Fixes:</b> Powered by midnight <i>kadak chai</i> (coffee is optional, chai is mandatory!), fixing tricky payment bugs, and sharing knowledge at <a href="https://blog.vaibhawkumar.in" target="_blank">blog.vaibhawkumar.in</a>.<br/><br/>
-    🚀 <b>Motto:</b> Keep the code clean, performance super fast, and <i>no unwanted tension—sab smooth chalega!</i>
+    📍 <b>Where I'm From:</b> Born and raised in <b>Bihar</b>, currently living and working in <b>Mohali, Punjab</b>.<br/><br/>
+    🎓 <b>What I Do:</b> B.Tech in CSE with <b>3.6+ years of experience</b>, working as a Website Developer at <b>Tech Prastish Software Solutions</b>.<br/><br/>
+    ⚡ <b>Skills & Tech:</b> Building fast websites, APIs, and online stores using <b>React, Next.js, TypeScript, Node.js, PHP, WordPress</b> & <b>BigCommerce</b>.<br/><br/>
+    ☕ <b>Fun Fact:</b> Powered by <i>kadak chai</i> ☕ (tea is a must, coffee is optional!), fixing hard coding bugs, and writing blogs at <a href="https://blog.vaibhawkumar.in" target="_blank">blog.vaibhawkumar.in</a>.<br/><br/>
+    🚀 <b>My Goal:</b> Write clean code, make websites fast, and <i>keep everything simple—sab smooth chalega!</i>
   </p>
 
   <br/><br/>
