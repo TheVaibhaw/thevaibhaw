@@ -19,6 +19,13 @@
 
   <br/><br/>
 
+  <!-- Total Profile Views Counter -->
+  <a href="https://github.com/thevaibhaw">
+    <img src="https://komarev.com/ghpvc/?username=thevaibhaw&amp;color=22d3ee&amp;style=for-the-badge&amp;label=👀+TOTAL+VIEWS" alt="Total Profile Views" />
+  </a>
+
+  <br/><br/>
+
   <img width="100%" src="https://streak-stats.demolab.com/?user=thevaibhaw&amp;hide_border=true&amp;background=0A101F&amp;stroke=22D3EE&amp;ring=A78BFA&amp;fire=10B981&amp;currStreakLabel=22D3EE&amp;sideLabels=94A3B8&amp;currStreakNum=F8FAFC&amp;sideNums=F8FAFC&amp;dates=64748B&amp;titleColor=22D3EE&amp;card_width=1180" alt="GitHub Streak" />
 
   <br/><br/>
