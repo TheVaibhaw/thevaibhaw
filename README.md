@@ -7,14 +7,14 @@
 
   <br/><br/>
 
-  <h3>Hey there! Welcome to my GitHub space.</h3>
+  <h3>Hey there! Welcome to my GitHub space 👋</h3>
 
-  <p align="center">
-    <b>1. Roots & Location:</b> Born and raised in <b>Bihar</b>, now crafting web applications out of <b>Mohali, Punjab</b>.<br/>
-    <b>2. Background & Role:</b> B.Tech CSE (HPTU grad) with <b>3.6+ years of experience</b>, currently working as a Website Developer at <b>Tech Prastish Software Solutions</b>.<br/>
-    <b>3. Tech Arsenal:</b> Building fast web apps, APIs, and online stores with <b>React, Next.js, TypeScript, Node.js, PHP, WordPress</b> & <b>BigCommerce</b>.<br/>
-    <b>4. Fuel & Fixes:</b> Powered by midnight <i>kadak chai</i> ☕ (coffee is optional, chai is mandatory!), fixing tricky payment bugs, and sharing knowledge at <a href="https://blog.vaibhawkumar.in" target="_blank">blog.vaibhawkumar.in</a>.<br/>
-    <b>5. My Motto:</b> Keep the code clean, performance super fast, and <i>no unwanted tension—sab smooth chalega!</i>
+  <p align="left">
+    📍 <b>Roots & Location:</b> Born and raised in <b>Bihar</b>, now crafting web applications out of <b>Mohali, Punjab</b>.<br/><br/>
+    🎓 <b>Background & Role:</b> B.Tech CSE (HPTU grad) with <b>3.6+ years of experience</b>, currently working as a Website Developer at <b>Tech Prastish Software Solutions</b>.<br/><br/>
+    ⚡ <b>Tech Arsenal:</b> Building fast web apps, APIs, and online stores with <b>React, Next.js, TypeScript, Node.js, PHP, WordPress</b> & <b>BigCommerce</b>.<br/><br/>
+    ☕ <b>Fuel & Fixes:</b> Powered by midnight <i>kadak chai</i> (coffee is optional, chai is mandatory!), fixing tricky payment bugs, and sharing knowledge at <a href="https://blog.vaibhawkumar.in" target="_blank">blog.vaibhawkumar.in</a>.<br/><br/>
+    🚀 <b>Motto:</b> Keep the code clean, performance super fast, and <i>no unwanted tension—sab smooth chalega!</i>
   </p>
 
   <br/><br/>
