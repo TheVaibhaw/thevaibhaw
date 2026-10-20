@@ -1,4 +1,4 @@
-name: Generate Snake Animation
+name: Build Profile Assets
 on:
   schedule:
     - cron: "0 */12 * * *"
@@ -13,19 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg?palette=github-light&color_snake=0891B2&color_dots=#ebedf0,#a5b4fc,#818cf8,#6366f1,#0891B2
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=10B981&color_dots=#2d3343,#4b5563,#7C3AED,#A78BFA,#22D3EE
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=39FF14&color_dots=#1a0d33,#6d28d9,#a78bfa,#00f0ff,#ff2bd6
+
+      - name: Build 3D contribution skyline
+        run: python3 scripts/skyline.py "${{ github.repository_owner }}" dist/skyline.svg
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "Update snake animation [skip ci]"
+          commit_message: "Update profile assets [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
