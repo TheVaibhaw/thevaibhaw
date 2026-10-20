@@ -76,6 +76,4 @@
 
 <img src="assets/footer.svg" width="100%" alt="Sab smooth chalega — end of transmission" />
 
-<sub>⚙️ every visual here is hand-forged SVG — regenerate with <code>python3 scripts/forge.py</code></sub>
-
 </div>
