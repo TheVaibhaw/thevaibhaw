@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://vaibhawkumar.in">
-  <img src="assets/hero.svg" width="100%" alt="Vaibhaw Kumar — WordPress, WooCommerce & BigCommerce developer. 4.6+ years, 4 WordPress.org plugins, 15+ themes, 10+ BigCommerce stores." />
+  <img src="assets/hero.svg?v=2" width="100%" alt="Vaibhaw Kumar — WordPress, WooCommerce & BigCommerce developer. 4.6+ years, 4 WordPress.org plugins, 15+ themes, 10+ BigCommerce stores." />
 </a>
 
 <br/>
