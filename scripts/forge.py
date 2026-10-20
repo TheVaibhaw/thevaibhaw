@@ -29,65 +29,6 @@ FACE_GRAD = (
 
 # --------------------------------------------------------------------------- hero
 
-def portrait_grid():
-    rows = open(os.path.join(ROOT, "scripts", "data", "portrait.hex")).read().split()
-    return [list(bytes.fromhex(r)) for r in rows]
-
-
-def portrait_relief(cx, cy, cell=5.4, depth=40, frames=12, dur=9):
-    """3D heightfield of the portrait as hologram scanlines, swinging left/right."""
-    grid = portrait_grid()
-    H, W = len(grid), len(grid[0])
-    peak = max(max(r) for r in grid)
-    tilt = -0.3
-    rows = []
-    for r in range(0, H):
-        vals = grid[r]
-        lit = [c for c in range(W) if vals[c] > 14]
-        if not lit:
-            continue
-        lo, hi = max(0, lit[0] - 3), min(W - 1, lit[-1] + 3)
-        rows.append((r, lo, hi))
-
-    # Two coordinate units per pixel so integer output still has half-pixel precision.
-    S = 2
-
-    def frame(theta):
-        out = []
-        for r, lo, hi in rows:
-            pts = []
-            for c in range(lo, hi + 1):
-                b = (grid[r][c] / peak) ** 0.85
-                p = ((c - W / 2) * cell, (r - H / 2) * cell, -b * depth)
-                x, y, _ = project(rot(p, tilt, theta), 700)
-                pts.append((round(x * S), round(y * S)))
-            bl = [project(rot(((c - W / 2) * cell, (r - H / 2) * cell, 0), tilt, theta), 700) for c in (hi, lo)]
-            d = "M" + " ".join(f"{x},{y}" for x, y in pts)
-            d += f" L{round(bl[0][0]*S)},{round(bl[0][1]*S)} L{round(bl[1][0]*S)},{round(bl[1][1]*S)}Z"
-            out.append(d)
-        return out
-
-    seq = [frame(0.32 * math.sin(2 * math.pi * k / frames)) for k in range(frames + 1)]
-    paths = []
-    n = len(rows)
-    for i in range(n):
-        mix = i / max(1, n - 1)
-        col = CYAN if mix < 0.45 else (VIO if mix < 0.7 else MAG)
-        vals = ";".join(f[i] for f in seq)
-        paths.append(
-            f'<path d="{seq[0][i]}" fill="{BG0}" fill-opacity=".9" stroke="{col}" stroke-width="{2.4}" '
-            f'stroke-linejoin="round"><animate attributeName="d" values="{vals}" dur="{dur}s" '
-            f'repeatCount="indefinite" calcMode="spline" '
-            f'keySplines="{";".join([".45 0 .55 1"] * frames)}"/></path>'
-        )
-    body = "".join(paths)
-    return (
-        f'<g id="relief" transform="translate({cx},{cy}) scale({1/S})">{body}</g>'
-        f'<use href="#relief" class="glA" opacity=".35" style="mix-blend-mode:screen" '
-        f'transform="translate(4,0)"/>'
-    )
-
-
 def typing_roles(x, y, phrases, size=21, slot=3.2):
     total = slot * len(phrases)
     cw = size * 0.6
@@ -163,40 +104,21 @@ def hero():
     horizon = 548
     css = """
 @keyframes popin{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
-@keyframes beam{0%{transform:translateY(-40px)}100%{transform:translateY(520px)}}
 @keyframes ghost{0%,100%{opacity:0}92%{opacity:0}93%{opacity:.8}95%{opacity:0}97%{opacity:.6}98%{opacity:0}}
 .pop{opacity:0;animation:popin .6s cubic-bezier(.2,.9,.3,1.3) forwards}
-.beam{animation:beam 3.6s linear infinite}
 .ghost{opacity:0;animation:ghost 5s infinite}
 """
     defs = (
         "<defs>" + glow_defs("glow", 4) + glow_defs("glowS", 2) + FACE_GRAD +
         f'<radialGradient id="sky" cx="50%" cy="78%" r="75%"><stop offset="0" stop-color="#3a0b5e"/>'
         f'<stop offset=".45" stop-color="{BG1}"/><stop offset="1" stop-color="{BG0}"/></radialGradient>'
-        f'<linearGradient id="beamG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity="0"/>'
-        f'<stop offset=".9" stop-color="{CYAN}" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/>'
-        "</linearGradient>"
         f'<radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset=".6" stop-color="#000" stop-opacity="0"/>'
         f'<stop offset="1" stop-color="#000" stop-opacity=".75"/></radialGradient>'
-        '<clipPath id="portClip"><rect x="30" y="64" width="400" height="484"/></clipPath>'
         "</defs>"
     )
     b = [defs, f'<rect width="{W}" height="{H}" fill="url(#sky)"/>', stars(W, horizon, 90)]
     b.append(synth_floor(W, horizon, H, MAG, lines=14, dur=2.6, cx=600))
     b.append(mountains(W, horizon))
-
-    # portrait hologram
-    b.append(f'<g clip-path="url(#portClip)">')
-    b.append(f'<rect x="30" y="64" width="400" height="484" fill="{BG0}" fill-opacity=".55"/>')
-    b.append(f'<g class="flicker">{portrait_relief(232, 300)}</g>')
-    b.append(f'<rect class="beam" x="30" y="64" width="400" height="40" fill="url(#beamG)"/>')
-    b.append("</g>")
-    b.append(hud_corners(30, 64, 400, 484, CYAN, 22, 2.5))
-    b.append(f'<text x="44" y="88" class="mono" font-size="11" fill="{CYAN}">SUBJECT://VAIBHAW.KUMAR</text>')
-    b.append(f'<text x="416" y="88" class="mono" font-size="11" fill="{MAG}" text-anchor="end">ID:0x7F3A</text>')
-    b.append(f'<text x="44" y="538" class="mono" font-size="11" fill="{LIME}">'
-             f'<tspan class="blink">●</tspan> FACE.LOCK // 3D RELIEF SCAN</text>')
-    b.append(f'<text x="416" y="538" class="mono" font-size="11" fill="{DIM}" text-anchor="end">DEPTH 40u</text>')
 
     # top HUD
     b.append(f'<text x="30" y="40" class="monob" font-size="13" fill="{CYAN}">[ PROFILE.SYS // v7.0 ]'
@@ -208,41 +130,44 @@ def hero():
     # spinning polyhedra
     iv, ie = icosahedron()
     cv, ce = cube()
-    b.append(spinning_wire(1110, 128, iv, ie, 50, MAG, dur=14, spin=(1, 2, 0), sw=1.6, extra='filter="url(#glowS)"'))
-    b.append(spinning_wire(1110, 128, cv, ce, 20, CYAN, dur=9, spin=(-2, 1, 1), sw=1.4))
+    for px, c1, c2, sgn in ((110, CYAN, MAG, -1), (1090, MAG, CYAN, 1)):
+        b.append(spinning_wire(px, 200, iv, ie, 56, c1, dur=14, spin=(1, 2 * sgn, 0), sw=1.6, extra='filter="url(#glowS)"'))
+        b.append(spinning_wire(px, 200, cv, ce, 22, c2, dur=9, spin=(-2, sgn, 1), sw=1.4))
 
-    # name block
-    X = 470
-    b.append(f'<g class="pop" style="animation-delay:.1s"><text x="{X}" y="112" class="monob" font-size="14" '
-             f'fill="{AMBER}">&gt; ./initialize --beast-mode --no-chill</text></g>')
-    for i, (word, y) in enumerate((("VAIBHAW", 210), ("KUMAR", 300))):
+    # name block, centered
+    X = W / 2
+    b.append(f'<g class="pop" style="animation-delay:.1s"><text x="{X}" y="104" class="monob" font-size="15" '
+             f'fill="{AMBER}" text-anchor="middle">&gt; ./initialize --beast-mode --no-chill</text></g>')
+    for i, (word, y) in enumerate((("VAIBHAW", 206), ("KUMAR", 302))):
         b.append(f'<g class="pop" style="animation-delay:{.3 + i*.2:.1f}s">')
-        b.append(f'<text x="{X}" y="{y}" class="disp" font-size="88" fill="{RED}" opacity=".75" '
-                 f'letter-spacing="3"><tspan class="glA">{word}</tspan></text>')
-        b.append(f'<text x="{X}" y="{y}" class="disp" font-size="88" fill="{CYAN}" opacity=".75" '
-                 f'letter-spacing="3"><tspan class="glB">{word}</tspan></text>')
-        b.append(extruded_text(X, y, word, 88, layers=12, dx=1.1, dy=1.3, spacing=3))
+        for col, cls in ((RED, "glA"), (CYAN, "glB")):
+            b.append(f'<text x="{X}" y="{y}" class="disp" font-size="92" fill="{col}" opacity=".75" '
+                     f'letter-spacing="4" text-anchor="middle"><tspan class="{cls}">{word}</tspan></text>')
+        b.append(extruded_text(X, y, word, 92, layers=12, dx=1.1, dy=1.3, spacing=4, anchor="middle"))
         b.append("</g>")
     # glitch slices across the name
-    for i, (yy, c, dl) in enumerate(((150, CYAN, 0), (196, MAG, 1.3), (262, LIME, 2.1), (288, CYAN, 3.4))):
-        b.append(f'<rect class="ghost" style="animation-delay:{dl}s" x="{X - 20}" y="{yy}" width="700" '
+    for i, (yy, c, dl) in enumerate(((146, CYAN, 0), (192, MAG, 1.3), (262, LIME, 2.1), (290, CYAN, 3.4))):
+        b.append(f'<rect class="ghost" style="animation-delay:{dl}s" x="230" y="{yy}" width="740" '
                  f'height="{3 + i % 2 * 4}" fill="{c}"/>')
 
-    b.append(f'<text x="{X}" y="350" class="monob" font-size="21" fill="{MAG}">//</text>')
-    b.append(typing_roles(X + 36, 350, [
+    phrases = [
         "WORDPRESS + WOOCOMMERCE ARCHITECT",
         "BIGCOMMERCE STENCIL SPECIALIST",
         "PAYMENT GATEWAY INTEGRATOR",
         "4 PLUGINS LIVE ON WORDPRESS.ORG",
         "FULL-STACK: REACT / NODE / PHP",
-    ]))
+    ]
+    tx = X - (36 + mono_width(max(phrases, key=len), 21)) / 2
+    b.append(f'<text x="{tx:.0f}" y="352" class="monob" font-size="21" fill="{MAG}">//</text>')
+    b.append(typing_roles(round(tx + 36), 352, phrases))
 
     chips = [("4.6+", "YEARS XP", CYAN), ("4", "WP.ORG PLUGINS", LIME), ("15+", "CUSTOM THEMES", MAG),
              ("10+", "BC STORES", AMBER), ("8+", "PAY GATEWAYS", VIO)]
+    cx0 = X - (len(chips) * 140 - 10) / 2
     for i, (num, lab, c) in enumerate(chips):
-        x0 = X + i * 140
+        x0 = cx0 + i * 140
         b.append(
-            f'<g class="pop" style="animation-delay:{1 + i*.15:.2f}s"><g transform="translate({x0},380)">'
+            f'<g class="pop" style="animation-delay:{1 + i*.15:.2f}s"><g transform="translate({x0:.0f},384)">'
             f'<path d="M0,0H118L130,12V66H12L0,54Z" fill="{BG0}" fill-opacity=".8" stroke="{c}" stroke-width="1.5"/>'
             f'<path d="M0,0H118L130,12V66H12L0,54Z" fill="none" stroke="{c}" stroke-width="3" '
             f'stroke-dasharray="40 400" filter="url(#glowS)">'
@@ -254,15 +179,15 @@ def hero():
         )
 
     b.append(
-        f'<g class="pop" style="animation-delay:1.9s"><text x="{X}" y="482" class="mono" font-size="13" fill="{DIM}">'
-        f'<tspan fill="{CYAN}">BASE</tspan> BIHAR <tspan fill="{MAG}">→</tspan> MOHALI, PUNJAB, IN'
+        f'<g class="pop" style="animation-delay:1.9s"><text x="{X}" y="488" class="mono" font-size="13" fill="{DIM}" '
+        f'text-anchor="middle"><tspan fill="{CYAN}">BASE</tspan> BIHAR <tspan fill="{MAG}">→</tspan> MOHALI, PUNJAB, IN'
         f'<tspan fill="{DIM}">   |   </tspan><tspan fill="{CYAN}">FUEL</tspan> KADAK CHAI x ∞'
         f'<tspan fill="{DIM}">   |   </tspan><tspan fill="{CYAN}">MODE</tspan> '
         f'<tspan fill="{LIME}">SHIPPING</tspan></text></g>'
     )
-    b.append(f'<text x="{X}" y="510" class="mono" font-size="13" fill="{DIM}"><tspan fill="{CYAN}">CREW</tspan> '
-             f'TECH PRASTISH SOFTWARE SOLUTIONS<tspan fill="{DIM}">   |   </tspan><tspan fill="{CYAN}">CLIENTS</tspan> '
-             f'USA · CANADA · AUSTRALIA · EU</text>')
+    b.append(f'<text x="{X}" y="514" class="mono" font-size="13" fill="{DIM}" text-anchor="middle">'
+             f'<tspan fill="{CYAN}">CREW</tspan> TECH PRASTISH SOFTWARE SOLUTIONS<tspan fill="{DIM}">   |   </tspan>'
+             f'<tspan fill="{CYAN}">CLIENTS</tspan> USA · CANADA · AUSTRALIA · EU</text>')
 
     b.append(marquee(656, 34, ["WORDPRESS", "WOOCOMMERCE", "BIGCOMMERCE STENCIL", "PHP 8", "MYSQL", "REST + GRAPHQL",
                                "REACT", "NEXT.JS", "TYPESCRIPT", "NODE.JS", "LARAVEL", "STRIPE", "PAYPAL",
