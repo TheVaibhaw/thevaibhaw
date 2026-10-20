@@ -61,8 +61,8 @@ BASE_CSS = f"""
 """
 
 
-def svg(w, h, body, css="", title="", fonts=True):
-    style = (font_css() if fonts else "") + BASE_CSS + css
+def svg(w, h, body, css="", title=""):
+    style = font_css() + BASE_CSS + css
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
         f'role="img" aria-label="{escape(title)}">'
