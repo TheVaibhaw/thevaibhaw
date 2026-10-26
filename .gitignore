@@ -1,0 +1,4 @@
+.preview/
+__pycache__/
+file.png
+*.pdf
